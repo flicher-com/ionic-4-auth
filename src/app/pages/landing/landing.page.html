@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar>
+    <!-- <ion-title>landing</ion-title> -->
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card class="welcome-card">
+    <ion-img src="/assets/shapes.svg"></ion-img>
+    <ion-card-header>
+      <ion-card-subtitle>Get Started</ion-card-subtitle>
+      <ion-card-title>Welcome to Ionic 4 Auth</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p>Starting point for Ionic 4 Application with Authentication.</p>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+      <ion-row>
+        <ion-col>
+          <ion-button color="primary" expand="full" color="primary" (click)="login()">Login</ion-button>
+        </ion-col>
+        <ion-col>
+          <ion-button color="primary" expand="full" color="danger" (click)="register()">Register</ion-button>
+        </ion-col>
+      </ion-row>
+  </ion-toolbar>
+</ion-footer>

@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-button color="light" (click)="dismissLogin()">Close</ion-button>
+    <ion-title>Login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <form #form="ngForm" (ngSubmit)="login(form)" method="post">
+    <ion-item>
+      <ion-label position="floating">Email</ion-label>
+      <ion-input ngModel type="email" name="email"></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label position="floating">Password</ion-label>
+      <ion-input ngModel type="password" name="password"></ion-input>
+    </ion-item>
+  
+    <p text-right>Forgot Password?</p>
+  
+    <ion-button type="submit" expand="full" color="primary">Login</ion-button>
+  </form>
+  
+
+  <!-- <p text-center>OR</p>
+
+  <ion-button expand="full">
+    <ion-icon name="logo-google"></ion-icon>
+  </ion-button>
+
+  <ion-button expand="full">
+    <ion-icon name="logo-facebook"></ion-icon>
+  </ion-button>
+
+  <ion-button expand="full">
+    <ion-icon name="logo-twitter"></ion-icon>
+  </ion-button> -->
+
+  <p text-center>Don't have a account?</p>
+  <ion-button expand="full" color="danger" (click)="registerModal()">Register</ion-button>
+
+</ion-content>
